@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/sideList.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script> 
+<script src="js/app.js"></script>
+<script src="js/sideList.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="music-info">
+			<div id="music-head">
+				<span id="title"></span>
+				<span id="artist"></span>
+			</div>
+
+			<div id="cover-img-area">
+				<span id="cover-img">
+					<img src="./images/cover1.jpg" alt="배경" id="music-image">
+				</span>
+			</div>
+			
+			<div id="file-name">
+	
+			</div>
+
+			<div id="music-time">
+				
+				<div id="current-time">
+	
+				</div>
+				<div id="play-time">
+
+				</div>
+			</div>
+			
+			<div id="buttonArea">
+				<button type="button" onclick="prev_music()">
+					<img src="./images/prev.jpg" alt="이전">
+				</button>
+				<button type="button" onclick="start_pause_music()">
+					<img src="./images/play.jpg" alt="시작" id="start-pause-img">	
+				</button>
+				<button type="button" onclick="stop_music()">
+					<img src="./images/end.jpg" alt="끄기">
+				</button>
+				<button type="button" onclick="next_music()">
+					<img src="./images/next.jpg" alt="다음">
+				</button>
+			</div>
+		</div>
+		<div id="play-list">
+			<h1>Audio List</h1>
+		</div>
+	</div>
+
+</body>
+</html>
